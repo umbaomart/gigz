@@ -1,0 +1,54 @@
+.ghl-footer {
+  box-shadow: none !important;
+}
+
+label {
+  line-height: 1.6;
+  margin-bottom: 15px !important;
+}
+
+.ghl-footer {
+  height: 100% !important;
+}
+
+.hl-app .ghl-form-wrap {
+  margin-top: 30px !important;
+}
+
+.ghl-progress-container[data-v-9b3e0fe7] {
+  height: 50px !important;
+  padding: 0 20px;
+  margin: 0 auto !important;
+}
+
+.ghl-footer-progress-text[data-v-9b3e0fe7] {
+  display: none !important;
+}
+
+.ghl-footer-progress-bar[data-v-9b3e0fe7] {
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+
+.ghl-progress-bar-fill[data-v-9b3e0fe7] {
+  border-radius: 0 !important;
+}
+
+.ghl-footer-buttons[data-v-0693cfda] {
+  padding: 0 20px !important;
+}
+
+.hl-app .ghl-question-set {
+  z-index: 10;
+}
+
+@media only screen and (max-width: 767px) {
+  #_builder-form {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .ghl-progress-container--mobile-hidden[data-v-9b3e0fe7] {
+    display: block !important;
+  }
+}

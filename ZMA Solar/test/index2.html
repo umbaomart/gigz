@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Places Autocomplete</title>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb6_JRPNbpBm9NVLKKo5vj27FO_I53k4w&libraries=places"></script> -->
+        <style>
+            .location-input {
+                width: 300px;
+                padding: 10px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <label for="location">Enter Location:</label>
+            <input id="location-input" class="location-input" placeholder="Enter Location" type="text">
+        </form>
+        <script>
+            let autocomplete;
+
+            function initAutocomplete() {
+                autocomplete = new google.maps.places.Autocomplete(
+                    document.getElementById('location-input'),
+                    {
+                        types: ['geocode'],
+                        componentRestrictions: { country: 'au' }
+                    }
+                )
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initAutocomplete" async defer></script>
+
+        <!-- <script>
+            function initAutocomplete() {
+                const input = document.getElementById('location-input');
+                const options = {
+                    types: ['geocode'], // Restrict to addresses only
+                    componentRestrictions: { country: 'au' } // Australia-only restriction
+                };
+                const autocomplete = new google.maps.places.Autocomplete(input, options);
+            }
+        </script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb6_JRPNbpBm9NVLKKo5vj27FO_I53k4w&libraries=places&callback=initAutocomplete"
+            async defer></script> -->
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <input id="searchTextField" type="text" />
+
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk"></script>
+
+        <script>
+            function initialize() {
+                var options = {
+                    componentRestrictions: { country: 'au' }
+                };
+
+                var input = document.getElementById('searchTextField');
+                var autocomplete = new google.maps.places.Autocomplete(input, options);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </body>
+
+</html>
+
+AIzaSyAb6_JRPNbpBm9NVLKKo5vj27FO_I53k4w
