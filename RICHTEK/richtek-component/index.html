@@ -12,7 +12,7 @@
   <body class="bg-black w-full max-w-[1170px] mx-auto py-[100px]">
 
     <!-- Header Phone Component -->
-    <a href="tel:1300448517" class="font-montserrat font-bold px-[12px] inline-block md:block no-underline">
+    <!-- <a href="tel:1300448517" class="font-montserrat font-bold px-[12px] inline-block md:block no-underline">
       <div class="flex md:justify-center items-center text-white md:w-full">
         <figure class="w-[80px] m-0 md:hidden">
           <img class="w-[100%]" src="https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65de81986a99a75460b6c3e7.png"
@@ -24,7 +24,7 @@
           <span class="text-[32px] font-black">1300 448 517</span>
         </div>
       </div>
-    </a>
+    </a> -->
     <!-- End Header Phone Component -->
 
     <!-- Cards Component -->
@@ -188,6 +188,37 @@
     </div> -->
     <!-- End Cards Component -->
 
+    <!-- Slider Component -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="text-white text-[38px] md:text-[18px] text-center font-montserrat leading-[1.6]">I found the service first class. Very professional and very efficient. Was amazed at how quickly they were at my house after calling and the job was done that day. Very impressed</p>
+            <cite class="text-white md:text-[18px] mt-[20px] text-center block text-[20px] font-bold font-montserrat">Trudi Lauren</cite>
+          </div>
+          <div class="swiper-slide">
+            <p class="text-white text-[38px] md:text-[18px] text-center font-montserrat leading-[1.6]">This is the best Plumbing service Perth has to offer. From the first phone call to the final job. Couldn't fault them what so ever.</p>
+            <cite class="text-white md:text-[18px] mt-[20px] text-center block text-[20px] font-bold font-montserrat">Corey DaLuz</cite>
+          </div>
+          <div class="swiper-slide">
+            <p class="text-white text-[38px] md:text-[18px] text-center font-montserrat leading-[1.6]">Very impressed with Richtek and will definitely use them again. I had two different plumbers from another company try and fix my 5 year old hot water boiler with no luck so i called Richtek who sent an experienced plumber. He quickly repaired and serviced the system and best of all had an electrician with him who fixed our outdoor plug that hasnt worked for years at no charge.</p>
+            <cite class="text-white md:text-[18px] mt-[20px] text-center block text-[20px] font-bold font-montserrat">Olivia Wyatt</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Slider Component -->
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 
