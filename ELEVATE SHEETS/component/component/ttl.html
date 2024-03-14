@@ -1,0 +1,39 @@
+<style>
+    @import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";.mx-\[5px\]{margin-left:5px;margin-right:5px}.mt-\[12px\]{margin-top:12px}.inline-flex{display:inline-flex}.hidden{display:none}.w-\[21px\]{width:21px}.w-\[33px\]{width:33px}.w-full{width:100%}.text-center{text-align:center}.align-middle{vertical-align:middle}.font-inter{font-family:Inter,sans-serif}.text-\[17px\]{font-size:17px}.text-\[45px\]{font-size:45px}.font-bold{font-weight:700}.leading-\[1\.4\]{line-height:1.4}.tracking-tight{letter-spacing:-.025em}.text-\[\#de1d59\]{--tw-text-opacity: 1;color:rgb(222 29 89 / var(--tw-text-opacity))}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.alarm-clock{animation:2s ease-in-out .7s infinite ring}@keyframes ring{0%{transform:rotate(0)}1%{transform:rotate(30deg)}3%{transform:rotate(-28deg)}5%{transform:rotate(34deg)}7%{transform:rotate(-32deg)}9%{transform:rotate(30deg)}11%{transform:rotate(-28deg)}13%{transform:rotate(26deg)}15%{transform:rotate(-24deg)}17%{transform:rotate(22deg)}19%{transform:rotate(-20deg)}21%{transform:rotate(18deg)}23%{transform:rotate(-16deg)}25%{transform:rotate(14deg)}27%{transform:rotate(-12deg)}29%{transform:rotate(10deg)}31%{transform:rotate(-8deg)}33%{transform:rotate(6deg)}35%{transform:rotate(-4deg)}37%{transform:rotate(2deg)}39%{transform:rotate(-1deg)}41%{transform:rotate(1deg)}43%{transform:rotate(0)}to{transform:rotate(0)}}@media (max-width: 768px){.md\:mx-\[3px\]{margin-left:3px;margin-right:3px}.md\:mt-\[16px\]{margin-top:16px}.md\:block{display:block}.md\:text-\[28px\]{font-size:28px}}
+</style>
+<div class="w-full">
+    <h2 class="text-center font-inter text-[45px] leading-[1.4] tracking-tight md:text-[28px] font-bold">
+      Get now for a special <br class="hidden md:block">price
+      <img class="align-middle w-[33px]"
+        src="https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65ee69d43bcf3012b3a60cd7.png" alt="">
+      <img class="align-middle w-[33px] mx-[5px] md:mx-[3px]"
+        src="https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65ee69d413e70b0ab1c8a62a.png" alt="">
+      <img class="align-middle w-[33px]"
+        src="https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65ee69d43bcf301b75a60cd8.png" alt="">
+    </h2>
+
+    <p class="text-center text-[17px] font-inter mt-[12px] md:text-14px md:mt-[16px] leading-[1.4]">
+      <img class="alarm-clock w-[21px] align-middle"
+        src="https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65ee69d43bcf3021f9a60cd6.png" alt="">
+      <b class="text-[#de1d59] mx-[5px]">Hurry up!</b> This offer ends in<b id="timer"
+        class="text-[#de1d59] mx-[5px] inline-flex">20hrs 01mins 38secs</b>
+    </p>
+
+  </div>
+
+<script>
+  const timerEl = document.getElementById('timer');
+
+  let time = 20 * 60 * 60 + 10 * 60 + 60;
+  const interval = setInterval(() => {
+    time -= 1
+    const hours = Math.floor(time / 3600)
+    const minutes = Math.floor((time - hours * 3600) / 60)
+    const seconds = time - hours * 3600 - minutes * 60
+    timerEl.innerHTML = `${hours}hrs ${minutes}mins ${seconds}secs`;
+
+    if (time <= 0) {
+      clearInterval(interval)
+    }
+  }, 1000)
+</script>
