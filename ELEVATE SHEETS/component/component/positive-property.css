@@ -1,0 +1,92 @@
+.bgCover {
+    background: url(https://storage.googleapis.com/msgsndr/zzQp1fe9SbPH4y7cJm39/media/65f7cf634d78691b78bdf81c.svg) no-repeat center center;
+    background-size: cover;
+}
+
+#heading-NuYmuOjJDz em,
+#heading-v0fBJ6k-yP em {
+    font-style: normal !important;
+    font-size: 40px !important;
+}
+
+#heading-v0fBJ6k-yP u {
+    text-decoration-thickness: 5px !important;
+}
+
+#_builder-form button {
+    animation: rocking 2s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transition: .2s;
+}
+
+#form-full_name {
+    position: relative;
+}
+
+.hl-app #_builder-form input[type=email][class=form-control],
+.form-XDILSi68QZ #_builder-form #form-full_name input[type=text][class=form-control] {
+    padding-left: 45px !important;
+}
+
+.form-XDILSi68QZ #_builder-form .field-container::before,
+#form-full_name:before {
+    content: '';
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 5px;
+    top: 23px;
+    transform: translateY(-50%);
+    background: url(https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65f3d9765ad57b7e1a5c917b.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.form-XDILSi68QZ #_builder-form .field-container::before {
+    background: url(https://storage.googleapis.com/msgsndr/FrdQ2WsIzcFFalulvjhW/media/65f3d9764d78696165b78ef5.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.form-XDILSi68QZ #_builder-form .field-container,
+.form-XDILSi68QZ #_builder-form .field-container {
+    position: relative;
+}
+
+@keyframes rocking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #heading-NuYmuOjJDz em,
+    #heading-v0fBJ6k-yP em {
+        font-size: 22px !important;
+        display: block;
+        line-height: 1.2;
+    }
+
+    .hl-app .btn p strong {
+        font-size: 28px !important;
+    }
+
+    #heading-NuYmuOjJDz u,
+    #heading-v0fBJ6k-yP u {
+        text-decoration-thickness: 2px !important;
+    }
+}
