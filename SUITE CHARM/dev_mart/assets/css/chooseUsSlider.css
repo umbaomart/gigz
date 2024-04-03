@@ -1,0 +1,55 @@
+body {
+  background: #111318;
+  padding: 50px 15px;
+}
+
+.chooseUsSlider {
+  width: 100%;
+}
+.chooseUsSlider .swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.chooseUsSlider .swiper-slide {
+  height: auto;
+}
+.chooseUsSlider .chooseUsCard {
+  background: -webkit-gradient(linear, left top, right top, from(#BB8C56), to(#554027));
+  background: linear-gradient(90deg, #BB8C56 0%, #554027 100%);
+  overflow: hidden;
+  border-radius: 36px;
+  position: relative;
+  height: 100%;
+}
+.chooseUsSlider .chooseUsCard:after {
+  content: "";
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 36px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #111318;
+}
+.chooseUsSlider .chooseUsCard__inner {
+  padding: 19px 15px 35px;
+  position: relative;
+  z-index: 2;
+}
+.chooseUsSlider .chooseUsCard__kv {
+  width: 56%;
+  margin: 0 auto;
+}
+.chooseUsSlider .icon--fifty .chooseUsCard__text {
+  margin-top: 30px;
+}
+.chooseUsSlider .chooseUsCard__text {
+  color: #fff;
+  text-align: center;
+  margin: 40px auto 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
