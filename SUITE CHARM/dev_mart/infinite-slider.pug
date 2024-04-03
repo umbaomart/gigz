@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title SUITECHARM Components
+
+    link(rel="stylesheet", href="./assets/css/chooseUsSlider.css")
+
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css')
+    script(src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js')
+  body
+    -
+      const data = [
+        {
+          kv: 'icon-50.svg',
+          className: 'icon--fifty',
+          text: 'Experience with 50+ properties past 7 years'
+        },
+        {
+          kv: 'icon-dollar.svg',
+          text: 'Lowest fee in the market'
+        },
+        {
+          kv: 'icon-money.svg',
+          text: 'Direct Payment from Airbnb'
+        },
+        {
+          kv: 'icon-commitment.svg',
+          text: 'A Commitment to Quality'
+        },
+        {
+          kv: 'icon-contract.svg',
+          text: 'No Fixed Term Contract'
+        },
+        {
+          kv: 'icon-graph.svg',
+          text: 'Realtime Financial View'
+        },
+        {
+          kv: 'icon-support.svg',
+          text: 'Dedicated Owner Support'
+        },
+        {
+          kv: 'icon-calendar.svg',
+          text: 'Realtime Calendar App'
+        },
+        {
+          kv: 'icon-mngmt.svg',
+          text: 'Proactive Reputation Management'
+        },
+      ]
+
+    // Slider main container
+    .swiper.chooseUsSlider
+      // Additional required wrapper
+      .swiper-wrapper
+        // Slides
+        each item in data
+          .swiper-slide
+            .chooseUsCard
+              .chooseUsCard__inner(class=`${item.className}`)
+                .chooseUsCard__kv
+                  img(src=`./assets/images/${item.kv}` alt='')
+                p.chooseUsCard__text=item.text
+
+  -// End of Body
+  script(src="./assets/js/script.js")
+
