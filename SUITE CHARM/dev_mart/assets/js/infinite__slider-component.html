@@ -1,0 +1,280 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+    .chooseUsSlider {
+        width: 100%;
+    }
+
+    .chooseUsSlider .swiper-wrapper {
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+    .chooseUsSlider .swiper-slide {
+        height: auto;
+    }
+
+    .chooseUsSlider .chooseUsCard {
+        background: -webkit-gradient(linear, left top, right top, from(#BB8C56), to(#554027));
+        background: linear-gradient(90deg, #BB8C56 0%, #554027 100%);
+        overflow: hidden;
+        border-radius: 36px;
+        position: relative;
+        height: 100%;
+    }
+
+    .chooseUsSlider .chooseUsCard:after {
+        content: "";
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 36px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: #111318;
+    }
+
+    .chooseUsSlider .chooseUsCard__inner {
+        padding: 19px 15px 35px;
+        position: relative;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 768px) {
+        .chooseUsSlider .chooseUsCard__inner {
+            padding: 12px 10px 35px;
+        }
+    }
+
+    .chooseUsSlider .chooseUsCard__kv {
+        width: 56%;
+        min-height: 108px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .chooseUsSlider .chooseUsCard__kv {
+            min-height: 88px;
+        }
+    }
+
+    .chooseUsSlider .chooseUsCard__kv img {
+        width: 100%;
+    }
+
+    .chooseUsSlider .chooseUsCard__text {
+        color: #fff;
+        text-align: center;
+        margin: 20px auto 0;
+        font-size: 16px;
+        line-height: 1.4;
+        font-family: "Raleway", sans-serif;
+    }
+
+    @media screen and (max-width: 768px) {
+        .chooseUsSlider .chooseUsCard__text {
+            margin: 10px auto 0;
+            font-size: 14px;
+        }
+    }
+</style>
+
+<!-- Slider main container-->
+<div class="swiper chooseUsSlider">
+    <!-- Additional required wrapper-->
+    <div class="swiper-wrapper">
+      <!-- Slides-->
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner icon--fifty">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-50.svg" alt=""></div>
+            <p class="chooseUsCard__text">Experience with 50+ properties past 7 years</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Lowest fee in the market</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Direct Payment from Airbnb</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-commitment.svg" alt=""></div>
+            <p class="chooseUsCard__text">A Commitment to Quality</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg" alt=""></div>
+            <p class="chooseUsCard__text">No Fixed Term Contract</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg" alt=""></div>
+            <p class="chooseUsCard__text">Realtime Financial View</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-support.svg" alt=""></div>
+            <p class="chooseUsCard__text">Dedicated Owner Support</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-calendar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Realtime Calendar App</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-mngmt.svg" alt=""></div>
+            <p class="chooseUsCard__text">Proactive Reputation Management</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner icon--fifty">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-50.svg" alt=""></div>
+            <p class="chooseUsCard__text">Experience with 50+ properties past 7 years</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Lowest fee in the market</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Direct Payment from Airbnb</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-commitment.svg" alt=""></div>
+            <p class="chooseUsCard__text">A Commitment to Quality</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg" alt=""></div>
+            <p class="chooseUsCard__text">No Fixed Term Contract</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg" alt=""></div>
+            <p class="chooseUsCard__text">Realtime Financial View</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-support.svg" alt=""></div>
+            <p class="chooseUsCard__text">Dedicated Owner Support</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-calendar.svg" alt=""></div>
+            <p class="chooseUsCard__text">Realtime Calendar App</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="chooseUsCard">
+          <div class="chooseUsCard__inner undefined">
+            <div class="chooseUsCard__kv"><img src="https://suitecharm.com/wp-content/uploads/2024/04/icon-mngmt.svg" alt=""></div>
+            <p class="chooseUsCard__text">Proactive Reputation Management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const slidesItemLength = document.querySelectorAll('.swiper-slide').length
+        console.log(slidesItemLength);
+
+        // Swiper
+        const swiper = new Swiper('.swiper.chooseUsSlider', {
+            loop: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                // disableOnInteraction: false,
+            },
+            speed: 1000,
+            // Add responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 480px
+                400: {
+                    slidesPerView: 3,
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 6,
+                },
+                1024: {
+                    slidesPerView: 7,
+                },
+                1200: {
+                    slidesPerView: 8,
+                }
+            }
+        });
+
+    })
+</script>

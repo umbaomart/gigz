@@ -13,40 +13,40 @@ html(lang='en')
     -
       const data = [
         {
-          kv: 'icon-50.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-50.svg',
           className: 'icon--fifty',
           text: 'Experience with 50+ properties past 7 years'
         },
         {
-          kv: 'icon-dollar.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg',
           text: 'Lowest fee in the market'
         },
         {
-          kv: 'icon-money.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-dollar.svg',
           text: 'Direct Payment from Airbnb'
         },
         {
-          kv: 'icon-commitment.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-commitment.svg',
           text: 'A Commitment to Quality'
         },
         {
-          kv: 'icon-contract.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg',
           text: 'No Fixed Term Contract'
         },
         {
-          kv: 'icon-graph.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-contract.svg',
           text: 'Realtime Financial View'
         },
         {
-          kv: 'icon-support.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-support.svg',
           text: 'Dedicated Owner Support'
         },
         {
-          kv: 'icon-calendar.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-calendar.svg',
           text: 'Realtime Calendar App'
         },
         {
-          kv: 'icon-mngmt.svg',
+          kv: 'https://suitecharm.com/wp-content/uploads/2024/04/icon-mngmt.svg',
           text: 'Proactive Reputation Management'
         },
       ]
@@ -56,13 +56,14 @@ html(lang='en')
       // Additional required wrapper
       .swiper-wrapper
         // Slides
-        each item in data
-          .swiper-slide
-            .chooseUsCard
-              .chooseUsCard__inner(class=`${item.className}`)
-                .chooseUsCard__kv
-                  img(src=`./assets/images/${item.kv}` alt='')
-                p.chooseUsCard__text=item.text
+        - for (i=0; i<=1; i++)
+          each item in data
+            .swiper-slide
+              .chooseUsCard
+                .chooseUsCard__inner(class=`${item.className}`)
+                  .chooseUsCard__kv
+                    img(src=`${item.kv}` alt='')
+                  p.chooseUsCard__text=item.text
 
   -// End of Body
   script(src="./assets/js/script.js")
