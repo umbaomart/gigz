@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const slidesItemLength = document.querySelectorAll('.swiper-slide').length
+    console.log(slidesItemLength);
 
     // Swiper
     const swiper = new Swiper('.swiper.chooseUsSlider', {
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         centeredSlides: true,
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false,
+            // disableOnInteraction: false,
         },
         speed: 1000,
         // Add responsive breakpoints
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 2,
             },
             // when window width is >= 480px
-            480: {
+            400: {
                 slidesPerView: 3,
             },
             // when window width is >= 640px
@@ -37,6 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-
 
 })

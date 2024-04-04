@@ -39,17 +39,35 @@ body {
   position: relative;
   z-index: 2;
 }
+@media screen and (max-width: 768px) {
+  .chooseUsSlider .chooseUsCard__inner {
+    padding: 12px 10px 35px;
+  }
+}
 .chooseUsSlider .chooseUsCard__kv {
   width: 56%;
+  min-height: 108px;
   margin: 0 auto;
 }
-.chooseUsSlider .icon--fifty .chooseUsCard__text {
-  margin-top: 30px;
+@media screen and (max-width: 768px) {
+  .chooseUsSlider .chooseUsCard__kv {
+    min-height: 88px;
+  }
+}
+.chooseUsSlider .chooseUsCard__kv img {
+  width: 100%;
 }
 .chooseUsSlider .chooseUsCard__text {
   color: #fff;
   text-align: center;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   font-size: 16px;
+  line-height: 1.4;
   font-family: "Raleway", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .chooseUsSlider .chooseUsCard__text {
+    margin: 10px auto 0;
+    font-size: 14px;
+  }
 }

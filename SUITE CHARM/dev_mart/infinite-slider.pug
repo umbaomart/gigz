@@ -56,13 +56,14 @@ html(lang='en')
       // Additional required wrapper
       .swiper-wrapper
         // Slides
-        each item in data
-          .swiper-slide
-            .chooseUsCard
-              .chooseUsCard__inner(class=`${item.className}`)
-                .chooseUsCard__kv
-                  img(src=`./assets/images/${item.kv}` alt='')
-                p.chooseUsCard__text=item.text
+        - for (i=0; i<=1; i++)
+          each item in data
+            .swiper-slide
+              .chooseUsCard
+                .chooseUsCard__inner(class=`${item.className}`)
+                  .chooseUsCard__kv
+                    img(src=`./assets/images/${item.kv}` alt='')
+                  p.chooseUsCard__text=item.text
 
   -// End of Body
   script(src="./assets/js/script.js")
